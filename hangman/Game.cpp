@@ -49,7 +49,7 @@ void Game::Init() {
 		default:
 			system("CLS");
 			cout << "Score: " << score;
-			cout << "Invalid Input (needs to be 1-5)";
+			cout << "\nInvalid Input (needs to be 1-5)";
 			break;
 		}
 		if (difficulty != -1)
@@ -148,7 +148,7 @@ void Game::PlayerInput() {
 }
 void Game::UppdateStages() {
 	betweenStages++;
-	if (betweenStages >= difficulty)
+	if (betweenStages > difficulty)
 	{
 		betweenStages = 0;
 		stages++;
